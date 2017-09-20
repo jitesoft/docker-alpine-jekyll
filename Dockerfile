@@ -9,4 +9,6 @@ RUN apk add --no-cache \
         jekyll \
         bundler
 
+WORKDIR /app
+
 CMD [ "/bin/ash" ]
