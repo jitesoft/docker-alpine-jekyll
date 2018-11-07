@@ -1,2 +1,3 @@
-# docker-alpine-jekyll
-Alpine linux with dependencies for jekyll installed.
+# Jekyll
+
+Alpine Linux with dependencies for Jekyll installed.
