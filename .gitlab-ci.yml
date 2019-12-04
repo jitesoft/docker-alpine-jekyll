@@ -11,6 +11,6 @@ build:
     refs:
       - master
   tags:
-    - jitesoft
     - buildx
+    - jitesoft
     - protected
