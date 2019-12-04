@@ -6,7 +6,7 @@ build:
   stage: build
   script:
     - TAGS=$(helper "${CI_REGISTRY_IMAGE},jitesoft/jekyll" "latest")
-    - docker buildx build --platform "linux/arm64,linux/amd64" --progress plain --push ${TAGS} .
+    - docker buildx build --platform linux/amd64 --progress plain --push ${TAGS} .
   only:
     refs:
       - master
