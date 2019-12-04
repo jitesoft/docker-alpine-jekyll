@@ -10,3 +10,7 @@ build:
   only:
     refs:
       - master
+  tags:
+    - jitesoft
+    - buildx
+    - protected
