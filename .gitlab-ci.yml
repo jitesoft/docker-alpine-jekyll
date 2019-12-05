@@ -2,11 +2,12 @@ stages:
   - build
 
 build:
+  timeout: 3 hours
   image: registry.gitlab.com/jitesoft/dockerfiles/misc:latest
   stage: build
   script:
     - TAGS=$(helper "${CI_REGISTRY_IMAGE},jitesoft/jekyll" "latest")
-    - docker buildx build --platform linux/amd64 --progress plain --push ${TAGS} .
+    - docker buildx build --platform linux/amd64,linux/arm64 --progress plain --push ${TAGS} .
   only:
     refs:
       - master
